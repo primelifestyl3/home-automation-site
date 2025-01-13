@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
         { title: "Smart Lighting", description: "Control your home lighting with ease using our intuitive systems." },
         { title: "Home Security", description: "Keep your family safe with advanced security features." },
         { title: "Energy Efficiency", description: "Reduce energy consumption and lower your bills." }
+        { title: "Smart Lighting", description: "Control your home lighting with ease using our intuitive systems." },
+        { title: "Home Security", description: "Keep your family safe with advanced security features." },
+        { title: "Energy Efficiency", description: "Reduce energy consumption and lower your bills." }
     ];
 
     features.forEach(feature => {
