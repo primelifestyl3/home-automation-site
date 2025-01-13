@@ -57,7 +57,7 @@ section.hero img {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.25;
 }
 
 section.hero .hero-text {
