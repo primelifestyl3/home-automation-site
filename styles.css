@@ -1,6 +1,6 @@
 :root {
     --primary-color: #A8D0DC;
-    --secondary-color: #00466b;
+    --secondary-color: #6F8D9B;
     --background-color: #F4F5F5;
     --font-color: #333;
     --cta-border-color: #fff;
@@ -94,7 +94,7 @@ nav ul li:hover ul {
 section.hero {
     position: relative;
     text-align: center;
-    color: #00466b;
+    color: #6F8D9B;
     padding: 50px;
 }
 
