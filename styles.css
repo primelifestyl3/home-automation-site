@@ -139,7 +139,7 @@ section.features {
 
 .feature h3 a:hover {
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer {
