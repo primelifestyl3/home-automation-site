@@ -3,6 +3,7 @@
     --secondary-color: #6F8D9B;
     --background-color: #F4F5F5;
     --font-color: #333;
+    --cta-border-color: #fff;
 }
 
 body {
@@ -15,7 +16,16 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid var(--cta-border-color);
 }
 
 header h1 {
@@ -30,16 +40,55 @@ nav ul {
     padding: 10px;
     list-style: none;
     margin: 0;
+    gap: 15px;
 }
 
 nav li {
-    margin: 0 15px;
+    position: relative;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--cta-border-color);
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    list-style: none;
+    min-width: 150px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+nav ul li:hover ul {
+    display: block;
 }
 
 section.hero {
@@ -79,6 +128,18 @@ section.features {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1;
+}
+
+.feature h3 a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.feature h3 a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 footer {
