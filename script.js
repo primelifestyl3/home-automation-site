@@ -4,13 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navItems = [
         { text: "About", link: "about.html" },
         { text: "Services", link: "services.html" },
-        {
-            text: "More",
-            subMenu: [
-                { text: "Videos", link: "videos.html" },
-                { text: "Next Steps", link: "next-steps.html" }
-            ]
-        },
+        { text: "More", link: "videos.html" },
         { text: "Contact", link: "contact.html" },
         { text: "Partners", link: "partners.html" }
     ];
