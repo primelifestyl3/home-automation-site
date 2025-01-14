@@ -2,16 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Navigation Menu
     const navMenu = document.getElementById("navMenu");
     const navItems = [
-        { text: "About", link: "#about" },
-        { text: "Services", link: "#services" },
+        { text: "About", link: "about.html" },
+        { text: "Services", link: "services.html" },
         {
             text: "More",
             subMenu: [
-                { text: "Videos", link: "#videos" },
-                { text: "Next Steps", link: "#next-steps" }
+                { text: "Videos", link: "videos.html" },
+                { text: "Next Steps", link: "next-steps.html" }
             ]
         },
-        { text: "Contact", link: "#contact" }
+        { text: "Contact", link: "contact.html" },
+        { text: "Partners", link: "partners.html" }
     ];
 
     navItems.forEach(item => {
@@ -35,16 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Features Section
     const featuresSection = document.getElementById("features");
     const features = [
-        { title: "Smart Lighting", description: "Control your home lighting with ease using our intuitive systems." },
-        { title: "Home Security", description: "Keep your family safe with advanced security features." },
-        { title: "Energy Efficiency", description: "Reduce energy consumption and lower your bills." }
+        { title: "Consultation", description: "Personalized expert advice tailored to your home automation needs." },
+        { title: "Procurement", description: "Streamlined sourcing of premium smart home devices for hassle-free upgrades." },
+        { title: "Installation", description: "Seamless setup of smart systems ensuring functionality and convenience." }
     ];
 
     features.forEach(feature => {
         const featureDiv = document.createElement("div");
         featureDiv.className = "feature";
         featureDiv.innerHTML = `
-            <h3>${feature.title}</h3>
+            <h3><a href="services.html">${feature.title}</a></h3>
             <p>${feature.description}</p>`;
         featuresSection.appendChild(featureDiv);
     });
