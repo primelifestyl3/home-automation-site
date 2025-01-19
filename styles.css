@@ -148,6 +148,44 @@ footer {
     text-align: center;
     padding: 10px;
 }
+/* Services Page Specific Styles */
+.services-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
 
+.services-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services-text {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.services-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.services-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
 
 
