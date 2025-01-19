@@ -44,5 +44,3 @@ document.addEventListener("DOMContentLoaded", () => {
         featuresSection.appendChild(featureDiv);
     });
 });
-
-   
