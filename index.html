@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Automation Solutions</title>
+    <title>Smart IQ Living</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="SmartQLiving Logo.png" alt="Logo">
-        <h1>Smart IQ Living</h1>
-    </header>
-    <nav>
-        <ul id="navMenu"></ul>
-    </nav>
-    <section class="hero">
-        <img src="hero.jpg" alt="Smart Home Automation">
-        <div class="hero-text">
-            <h2>Smart Solutions for Your Home</h2>
-            <p>Experience the ultimate in comfort, security, and convenience with our home automation systems.</p>
+        <div class="hero">
+            <img src="hero.jpg" alt="Smart Home Automation" class="hero-image">
+            <div class="logo-container">
+                <img src="SmartQLiving_Logo.png" alt="Logo" id="logo">
+            </div>
         </div>
-    </section>
-    <section class="features" id="features"></section>
+    </header>
+
+    <nav>
+        <ul id="navMenu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="videos.html">More</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="partners.html">Partners</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="features" id="features">
+            <h2>Our Features</h2>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2025 Smart IQ Living All rights reserved.</p>
+        <p>&copy; 2025 Smart IQ Living. All rights reserved.</p>
+        <button id="toggleView">Toggle View</button>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
